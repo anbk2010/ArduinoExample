@@ -8,6 +8,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);  // set the LCD address to 0x27 for a 16 cha
 #define re1_dt_pin 13
 #define re1_sw_pin 9
 
+// Stepper 1 Inputs
 #define m1_step_pin 2
 #define m1_direction_pin 5
 #define m1_enable_pin 8
@@ -17,7 +18,10 @@ int current_clk_1;
 int previous_clk_1;
 int re1_sw_value;
 
+//Stepper 1 enable/disable state
 int step_state_1 = 0;
+
+//Stepper 1 direction
 int m1_direction = 0;
 
 void setup() {
